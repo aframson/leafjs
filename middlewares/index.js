@@ -1,4 +1,9 @@
-const users = require('../configs/authUsers.json');
+/** MIDDLEWARE
+ * =======================================================================
+ *  Contains all middleware functions for handling the API
+ * =======================================================================
+ */
+const users = require('../configs/authUsers.json'); //  a json file file containing authorized users for the api
 
 const basicAuth = async (req, res, next) => {
 

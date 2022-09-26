@@ -1,4 +1,8 @@
-
+/** UTILS
+ * =======================================================================
+ *  Contains all the function for handling Utilities
+ * =======================================================================
+ */
 const pageNate = (req,res,data) => {
 
     const {page,limit} = req.query

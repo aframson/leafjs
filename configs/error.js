@@ -1,4 +1,8 @@
-
+/** ERROR HANDLING
+ * =======================================================================
+ *  Contains the function for handling errors in the application
+ * =======================================================================
+ */
 module.exports = (app)=>{
     app.use((req, res, next) => {
         res.status(404).send({ status: 404, error: 'Not found' });
