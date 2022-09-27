@@ -1,7 +1,7 @@
 
 /** REAL-TIME API
  * =======================================================================
- *  This is the router pages where all APIs are 
+ *  This is the router pages where all Real time APIs are 
  *  directed to 
  * =======================================================================
  */
