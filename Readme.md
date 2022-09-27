@@ -32,5 +32,7 @@ The mysql is set up in 3 example connections
 
 ## MongoDb
 ---
-
+The mongoDB is set up in 2 example connections
+- Atlas example connection
+- Local instance example connection
 
