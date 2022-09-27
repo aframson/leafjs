@@ -6,6 +6,6 @@
  */
  module.exports = function(leaf,io){
 
-    leaf.use('/users',require('./models/users')())
+    leaf.use('/users',require('./services/users')())
 
 }

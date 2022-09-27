@@ -14,6 +14,6 @@ module.exports = function (io) {
          /**
           * Routes begins here 
           */
-         require('./models/users')(socket)
+         require('./services/users')(socket)
     })
 }
