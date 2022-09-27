@@ -21,8 +21,11 @@ these have been configured and abtracted in a way to make you concentrate on you
 <code>or</code><br/>
 <code>'npm run start' : to run normaly</code><br/>
 
-# Database
+# Architechture
 ---
+![image banner](./public/assets/arc.png)
+
+# Database
 Leafjs is made up to two database of which you can choose one. 
 ## Mysql
 The mysql is set up in 3 example connections
