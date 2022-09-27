@@ -16,6 +16,7 @@ const express = require('express')
 const app = express()
 const http = require('http')
 const {Server} = require('socket.io')
+
 const {PORT,NODE_ENV} = require('./configs/port'); // distructred PORT and ENV from the ports config
 app.set('port', PORT); // set port 
 app.set('env', NODE_ENV); // set environment
@@ -27,10 +28,6 @@ const io = new Server(server,{
         method:["POST","GET"] // you can add more methods eg. DELETE , UPDATE etc...
     }
 })
-
-
-const connection = require('./configs/database/mysql/connection') // checking mysql database
-
 
 // checking for connected users 
 io.on('connection',(socket)=>{
@@ -57,11 +54,8 @@ module.exports = server;
 // listern to the server
 server.listen(PORT, () => {
     console.log(
-        `
-============================================================
-✅ Leaf Server started @  http://localhost:${app.get('port')}.
-✅ Environment : ${app.get('env')}
-============================================================
-        `
+        `Leaf Server started on  http://localhost:${app.get(
+            'port'
+        )} | Environment : ${app.get('env')}`
     );
 });

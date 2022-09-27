@@ -6,11 +6,11 @@ const fs = require('fs');
 
 
 if (process.argv.length < 3) {
-    console.log('======================================================');
-    console.log('| You have to provide a name to your app.');
-    console.log('| For example :');
-    console.log('| " npx create-leaf-container my-app " ');
-    console.log('======================================================');
+    console.log('❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌');
+    console.log('❌ You have to provide a name to your app.');
+    console.log('❌ For example :');
+    console.log('❌ " npx create-leaf-container my-app " ');
+    console.log('❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌');
     process.exit(1);
 }
 
@@ -23,8 +23,7 @@ try {
     fs.mkdirSync(projectPath);
   } catch (err) {
     if (err.code === 'EEXIST') {
-      console.log(`The file ${projectName} already exist in the current directory, please give it another name.`);
-      console.log('================================================================================================');
+      console.log(`❌❌ The file ${projectName} already exist in the current directory, please give it another name.`);
 
     } else {
       console.log(err);
@@ -43,7 +42,18 @@ try {
       execSync('npx rimraf ./.git');
       // fs.rmdirSync(path.join(projectPath, 'bin'), { recursive: true});
       fs.rm(path.join(projectPath, 'bin'),()=>{},{ recursive: true })
-      console.log('The installation is done, this is ready to use !');
+      
+      console.log('🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿')
+      console.log('🌿')
+      console.log('🌿  The installation is done, leafjs is ready to use ');
+      console.log(`🌿  cd  /${projectName}, then `);
+      console.log(`🌿  run 'npm run fast' : to run with nodemon hot reload`);
+      console.log(`🌿  or `);
+      console.log(`🌿  run 'npm run start' : to run normaly`);
+      console.log('🌿')
+      console.log('🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿')
+     
+
 
     } catch (error) {
       console.log(error);
