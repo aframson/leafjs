@@ -1,10 +1,10 @@
 {
-  "name": "leafjs",
+  "name": "create-leaf-container",
   "version": "1.0.0",
   "description": "A simple fullstack framework",
   "main": "app.js",
   "bin": {
-    "create-leaf-container": "./generate-app.js"
+    "create-leaf-container": "./bin/getapp.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
