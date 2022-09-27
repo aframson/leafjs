@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "fast": "nodemon settings.js",
-    "start": "node settings.js"
+    "fast": "nodemon server.js",
+    "start":"node server.js"
   },
   "author": "Richard Obiri",
   "license": "ISC",

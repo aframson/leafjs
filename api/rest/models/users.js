@@ -15,7 +15,7 @@
  */
 const express = require('express')
 const router =  new express.Router()
-const {basicAuth,pageNate} = require('../../middlewares')
+const {basicAuth} = require('../../../middlewares')
 
 
 // dummy user data
@@ -58,9 +58,8 @@ module.exports = function userEndpoint(io) {
           }
           userData.push(data)
           res.status(200).json({message:userData})
-          io.emit('fetch-user',userData)
          
     })
 
-return router;
+return router; // make sure you return router
 }

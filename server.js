@@ -23,19 +23,19 @@ app.set('env', NODE_ENV); // set environment
 const server = http.createServer(app)
 const io = new Server(server,{ 
     cors:{
-        origin:"*", // accept app origin
+        origin:"*", // accept any origin you can change it to your specific url for security
         method:["POST","GET"] // you can add more methods eg. DELETE , UPDATE etc...
     }
 })
-// checking for connected users 
-io.on('connection',(socket)=>{
-    console.log('user connected ',socket.id)
-})
+
+// Realtime Routes
+require('./api/realtime')(io)
+
 // adding the config file 
 require('./configs/app')(app)
 
-// adding the branches (router) page
-require('./viens')(app,io);
+// REST API Routes 
+require('./api/rest')(app);
 
 // introduction page begins with '/'
 app.get('/',(req,res)=>{
