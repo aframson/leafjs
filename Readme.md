@@ -17,7 +17,7 @@ these have been configured and abtracted in a way to make you concentrate on you
 ---
 <code>run 'npx create-leaf-container app-name'</code><br/> 
 <code>cd app-name/</code><br/>
-<code>run 'run 'npm run fast' : to run with nodemon hot reload'</code><br/>
+<code>run 'npm run fast' : to run with nodemon hot reload'</code><br/>
 <code>or</code><br/>
 <code>run 'npm run start' : to run normaly</code><br/>
 
