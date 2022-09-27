@@ -37,7 +37,7 @@ try {
       execSync(`git clone --depth 1 ${git_repo} ${projectPath}`);
       process.chdir(projectPath);
       console.log('Installing dependencies...');
-      execSync('npm install');
+      execSync('npm update --save');
       console.log('Removing useless files');
       execSync('npx rimraf ./.git');
       // fs.rmdirSync(path.join(projectPath, 'bin'), { recursive: true});
@@ -52,8 +52,6 @@ try {
       console.log(`🌿  run 'npm run start' : to run normaly`);
       console.log('🌿')
       console.log('🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿')
-     
-
 
     } catch (error) {
       console.log(error);
