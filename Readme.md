@@ -15,11 +15,11 @@ these have been configured and abtracted in a way to make you concentrate on you
 
 # Get started 
 ---
-<code>run 'npx create-leaf-container app-name'</code><br/> 
+<code>'npx create-leaf'</code><br/> 
 <code>cd app-name/</code><br/>
-<code>run 'npm run fast' : to run with nodemon hot reload'</code><br/>
+<code>'npm run fast' : to run with nodemon hot reload'</code><br/>
 <code>or</code><br/>
-<code>run 'npm run start' : to run normaly</code><br/>
+<code>'npm run start' : to run normaly</code><br/>
 
 # Database
 ---

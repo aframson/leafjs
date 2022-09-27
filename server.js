@@ -29,13 +29,13 @@ const io = new Server(server,{
 })
 
 // Realtime Routes
-require('./api/realtime')(io)
+require('./api/realtime/route')(io)
 
 // adding the config file 
 require('./configs/app')(leaf)
 
 // REST API Routes 
-require('./api/rest')(leaf,io);
+require('./api/rest/route')(leaf,io);
 
 // introduction page begins with '/'
 leaf.get('/',(req,res)=>{
