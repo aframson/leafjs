@@ -14,16 +14,16 @@
   "author": "Richard Obiri",
   "license": "ISC",
   "dependencies": {
-    "cookie-parser": "^1.4.6",
-    "cors": "^2.8.5",
-    "express": "^4.18.1",
-    "mongoose": "^6.6.2",
-    "morgan": "^1.10.0",
-    "multer": "^1.4.5-lts.1",
-    "mysql": "^2.18.1",
-    "socket.io": "^4.5.2"
+    "cookie-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "mongoose": "*",
+    "morgan": "*",
+    "multer": "*",
+    "mysql": "*",
+    "socket.io": "*"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "*"
   }
 }
