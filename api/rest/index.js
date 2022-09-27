@@ -4,8 +4,8 @@
  *  directed to 
  * =======================================================================
  */
- module.exports = function(app){
+ module.exports = function(leaf,io){
 
-    app.use('/users',require('./models/users'))
+    leaf.use('/users',require('./models/users')())
 
 }

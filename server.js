@@ -13,14 +13,14 @@
  */
 
 const express = require('express')
-const app = express()
+const leaf = express()
 const http = require('http')
 const {Server} = require('socket.io')
 const {PORT,NODE_ENV} = require('./configs/port'); // distructred PORT and ENV from the ports config
-app.set('port', PORT); // set port 
-app.set('env', NODE_ENV); // set environment
+leaf.set('port', PORT); // set port 
+leaf.set('env', NODE_ENV); // set environment
 
-const server = http.createServer(app)
+const server = http.createServer(leaf)
 const io = new Server(server,{ 
     cors:{
         origin:"*", // accept any origin you can change it to your specific url for security
@@ -32,18 +32,18 @@ const io = new Server(server,{
 require('./api/realtime')(io)
 
 // adding the config file 
-require('./configs/app')(app)
+require('./configs/app')(leaf)
 
 // REST API Routes 
-require('./api/rest')(app);
+require('./api/rest')(leaf,io);
 
 // introduction page begins with '/'
-app.get('/',(req,res)=>{
+leaf.get('/',(req,res)=>{
     res.render('public')
 })
 
 // error handling 
-require('./configs/error')(app)
+require('./configs/error')(leaf)
 
 // export the server 
 module.exports = server;
@@ -53,8 +53,8 @@ server.listen(PORT, () => {
     console.log(
         `
 ============================================================
-✅ Leaf Server started @  http://localhost:${app.get('port')}.
-✅ Environment : ${app.get('env')}
+✅ Leaf Server started @  http://localhost:${leaf.get('port')}.
+✅ Environment : ${leaf.get('env')}
 ============================================================
         `
     );
