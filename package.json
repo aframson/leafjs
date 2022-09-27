@@ -1,7 +1,7 @@
 {
   "name": "create-leaf-container",
   "version": "0.0.0",
-  "description": "A simple fullstack framework",
+  "description": "The Abstracted Real-Time API server container for Backend Applications",
   "main": "app.js",
   "bin": {
     "create-leaf-container": "./bin/getapp.js"
@@ -21,6 +21,7 @@
     "morgan": "*",
     "multer": "*",
     "mysql": "*",
+    "progress": "^2.0.3",
     "socket.io": "*"
   },
   "devDependencies": {

@@ -3,6 +3,7 @@
 const { execSync } = require('child_process');
 const path = require('path');
 const fs = require('fs');
+const ProgressBar = require('progress')
 
 
 if (process.argv.length < 3) {
@@ -57,4 +58,8 @@ try {
       console.log(error);
     }
 }
-main();
+
+
+
+
+  main();
