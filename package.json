@@ -1,7 +1,7 @@
 {
   "name": "create-leaf",
   "version": "0.0.0",
-  "description": "The Abstracted Real-Time API server container for Backend Applications",
+  "description": "The Abstracted Real-Time API server framework for Backend Applications",
   "main": "app.js",
   "bin": {
     "create-leaf-container": "./bin/getapp.js"
