@@ -27,16 +27,10 @@ const io = new Server(server,{
         method:["POST","GET"] // you can add more methods eg. DELETE , UPDATE etc...
     }
 })
-
-
-const connection = require('./configs/database/mysql/connection') // checking mysql database
-
-
 // checking for connected users 
 io.on('connection',(socket)=>{
     console.log('user connected ',socket.id)
 })
-
 // adding the config file 
 require('./configs/app')(app)
 
