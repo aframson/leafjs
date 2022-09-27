@@ -2,7 +2,7 @@
 
 # Welcome to Leaf.js
 ---
-## The Abstracted Realtime & REST API Server Container
+## The Abstracted Realtime & REST API Server Framework
 leaf.js is a server container consisting of the following stacks 
 - node 
 - socket.io
