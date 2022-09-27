@@ -1,6 +1,7 @@
 ![image banner](./public/assets/banner.png)
 
 # Welcome to Leaf.js
+---
 ## The Abstracted Realtime API Server Container
 leaf.js is a server container consisting of the following stacks 
 - node 
@@ -12,8 +13,24 @@ leaf.js is a server container consisting of the following stacks
 
 these have been configured and abtracted in a way to make you concentrate on your API endpoints , with a clear documentaion you will be able to set up a realtime server with one of the above database (mysql, mongodb).
 
+# Get started 
+---
+ <code>run 'npx create-leaf-container app-name'</code><br/> 
+<code>cd app-name/</code><br/>
+<code>run 'run 'npm run fast' : to run with nodemon hot reload'</code><br/>
+<code>or</code><br/>
+<code>run 'npm run start' : to run normaly</code><br/>
+
 # Database
+---
 Leafjs is made up to two database of which you can choose one. 
 ## Mysql
 The mysql is set up in 3 example connections
+- AWS example connection 
+- Cpanel example connection
+- Localhost example connection
+
+## MongoDb
+---
+
 
