@@ -15,7 +15,7 @@ these have been configured and abtracted in a way to make you concentrate on you
 
 # Get started 
 ---
-<code>'npx create-leaf'</code><br/> 
+<code>'npx create-leaf app-name'</code><br/> 
 <code>cd app-name/</code><br/>
 <code>'npm run fast' : to run with nodemon hot reload'</code><br/>
 <code>or</code><br/>
