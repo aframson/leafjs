@@ -1,6 +1,6 @@
 
 
-![logo](./public/assets/banner.png)
+![logo](https://github.com/aframson/leafjs/raw/main/public/assets/banner.png)
 
 An efficient server implies a lower cost of the infrastructure, a better
 responsiveness under load and happy users. How can you efficiently handle the
@@ -18,7 +18,7 @@ It is inspired by Nodejs , Express , Socket.io , Mysql ,MongoDB and as far as we
 
 ## The Abstracted Realtime & REST API Server Framework
 
-![logo](./public/assets/arc.png)
+![logo](https://github.com/aframson/leafjs/raw/main/public/assets/arc.png)
 
 leaf.js is a server container consisting of the following stacks 
 - node 
