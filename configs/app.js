@@ -10,11 +10,8 @@
  const cookieParser = require('cookie-parser')
  const multer = require('multer')
  const upload = multer()
- const {basicAuth}  = require('../middlewares/index') 
  
  module.exports = (app) => {
-     // add the custom middleware
-     app.use(basicAuth)
      // to prevent cors errors
      app.use(cors());
      // log requests to the console 
