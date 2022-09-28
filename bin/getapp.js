@@ -48,9 +48,9 @@ try {
       console.log('🌿')
       console.log('🌿  The installation is done, leafjs is ready to use ');
       console.log(`🌿  cd  /${projectName}, then `);
-      console.log(`🌿  run 'npm run fast' : to run with nodemon hot reload`);
+      console.log(`🌿  run 'npm run fast' : to run with nodemon hot reload (development)`);
       console.log(`🌿  or `);
-      console.log(`🌿  run 'npm run start' : to run normaly`);
+      console.log(`🌿  run 'npm run start' : to run (production)`);
       console.log('🌿')
       console.log('🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿')
 
