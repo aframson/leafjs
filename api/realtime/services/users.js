@@ -1,4 +1,11 @@
-const {basicAuth} = require('../../../middlewares')
+
+/** REAL-TIME API
+ * =======================================================================
+ *  This is an example to recive userdata , update it and send back 
+ *  response in realtime.
+ * =======================================================================
+ */
+
 
 // dummy user data
 const userData = [
@@ -25,9 +32,10 @@ const userData = [
 
 module.exports = userModel = (socket)=>{
     
-      socket.on('user-data',(d)=>{
-          userData.push(d)
-          socket.emit('get-user',userData)
-      })
+    socket.on('user-data',(d)=>{
+        userData.push(d) // update the data
+        socket.emit('get-user',userData) // send response to the listening channel 'get-user' 
+    })
+
 
 }

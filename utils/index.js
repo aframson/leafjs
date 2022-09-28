@@ -3,6 +3,8 @@
  *  Contains all the function for handling Utilities
  * =======================================================================
  */
+
+// this is used for pagenating
 const pageNate = (req,res,data) => {
 
     const {page,limit} = req.query
