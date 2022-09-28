@@ -20,16 +20,7 @@ development?
 
  - [Quick start](#quick-start)
  - [Install](#install)
- - [Example](#example)
- - [Fastify v1.x and v2.x](#fastify-v1x-and-v2x)
- - [Core features](#core-features)
- - [Benchmarks](#benchmarks)
- - [Documentation](#documentation)
- - [Ecosystem](#ecosystem)
- - [Support](#support)
- - [Team](#team)
- - [Hosted by](#hosted-by)
- - [License](#license)
+
 
 Enter Leaf. Leaf is a Server-side  framework highly focused on providing the best
 developer experience with the least overhead and a powerful plugin architecture.
