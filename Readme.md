@@ -162,11 +162,12 @@ const SendData = ()=>{
     socket.emit(data,"user-data")
 }
 
-const RecieveData = ()=>{
-    socket.on('get-user',(data)=>{
+// listern for realtime response 
+const useEffect(()=>{
+  socket.on('get-user',(data)=>{
         console.log(data) // [...] contains the updated information in real time 
     })
-}
+},[])
 ```
 
 
