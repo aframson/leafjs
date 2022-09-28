@@ -11,7 +11,6 @@
  *  Developer : Richard Obiri
  * =======================================================================
  */
-
 const express = require('express')
 const leaf = express()
 const http = require('http')
@@ -41,7 +40,6 @@ require('./api/rest/route')(leaf,io);
 leaf.get('/',(req,res)=>{
     res.render('public')
 })
-
 // error handling 
 require('./configs/error')(leaf)
 
