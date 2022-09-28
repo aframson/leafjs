@@ -27,6 +27,15 @@ developer experience with the least overhead and a powerful plugin architecture.
 It is inspired by Nodejs , Express , Socket.io , Mysql ,MongoDB and as far as we know, it is Realtime Server Framework  
 
 ## The Abstracted Realtime & REST API Server Framework
+
+<div align="center"> <a href="https://fastify.io/">
+    <img
+      src="./public/assets/arc.png"
+      width="650"
+      height="auto"
+    />
+  </a>
+</div>
 leaf.js is a server container consisting of the following stacks 
 - node 
 - socket.io
