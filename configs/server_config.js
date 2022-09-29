@@ -4,7 +4,7 @@
  * =======================================================================
  */
 
-const Leaf = require('../settings')
+const Leaf = require('leaf-server')
 
 module.exports = (app) => {
     Leaf.config(app,

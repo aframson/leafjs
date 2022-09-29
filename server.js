@@ -15,15 +15,15 @@ const Leaf = require('leaf-server')
 
 Leaf.init(5050,
     {
-        origin: '*',
-        methods: ["GET", "POST"],
-        errorHandler: require('./configs/errorHandling.js'),
+        origin: '*', // you can change it to a specific url location 
+        methods: ["GET", "POST"], // you ccan add more methods to it 
+        errorHandler: require('./configs/errorHandling.js'), // you can write your own error handler and locate it 
     },
     (io, leaf) => {
         // 1. Realtime Routes 
         require('./api/realtime/route')(io)
-        // 2 .adding the config file 
-        require('./configs/app')(leaf)
+        // 2 .Adding the config file 
+        require('./configs/server_config')(leaf)
         // 3 .REST API Routes 
         require('./api/rest/route')(leaf, io);
     })
