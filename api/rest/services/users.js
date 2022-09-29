@@ -15,7 +15,7 @@
  */
 const express = require('express')
 const router =  new express.Router()
-const {basicAuth} = require('../../../middlewares')
+const {basicAuth} = require('../../../settings/middlewares/index')
 
 
 // dummy user data
