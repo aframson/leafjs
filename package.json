@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "fast": "nodemon server.js",
-    "start":"node server.js"
+    "start": "node server.js"
   },
   "author": "Richard Obiri",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "cookie-parser": "*",
     "cors": "*",
     "express": "*",
+    "leaf-server": "^1.0.1",
     "mongoose": "*",
     "morgan": "*",
     "multer": "*",

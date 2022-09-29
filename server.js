@@ -11,49 +11,19 @@
  *  Developer : Richard Obiri
  * =======================================================================
  */
-const express = require('express')
-const leaf = express()
-const http = require('http')
-const {Server} = require('socket.io')
-const {PORT,NODE_ENV} = require('./configs/port'); // distructred PORT and ENV from the ports config
-leaf.set('port', PORT); // set port 
-leaf.set('env', NODE_ENV); // set environment
+const Leaf = require('leaf-server')
 
-const server = http.createServer(leaf)
-const io = new Server(server,{ 
-    cors:{
-        origin:"*", // accept any origin you can change it to your specific url for security
-        method:["POST","GET"] // you can add more methods eg. DELETE , UPDATE etc...
-    }
-})
-
-// Realtime Routes
-require('./api/realtime/route')(io)
-
-// adding the config file 
-require('./configs/app')(leaf)
-
-// REST API Routes 
-require('./api/rest/route')(leaf,io);
-
-// introduction page begins with '/'
-leaf.get('/',(req,res)=>{
-    res.render('public')
-})
-// error handling 
-require('./configs/error')(leaf)
-
-// export the server 
-module.exports = server;
-
-// listern to the server
-server.listen(PORT, () => {
-    console.log(
-        `
-============================================================
-✅ Leaf Server started @  http://localhost:${leaf.get('port')}.
-✅ Environment : ${leaf.get('env')}
-============================================================
-        `
-    );
-});
+Leaf.init(5050,
+    {
+        origin: '*',
+        methods: ["GET", "POST"],
+        errorHandler: require('./configs/errorHandling.js'),
+    },
+    (io, leaf) => {
+        // 1. Realtime Routes 
+        require('./api/realtime/route')(io)
+        // 2 .adding the config file 
+        require('./configs/app')(leaf)
+        // 3 .REST API Routes 
+        require('./api/rest/route')(leaf, io);
+    })
