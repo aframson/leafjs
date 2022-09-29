@@ -17,7 +17,7 @@
     "cookie-parser": "*",
     "cors": "*",
     "express": "*",
-    "leaf-server": "*",
+    "leaf-server": "^1.0.4",
     "mongoose": "*",
     "morgan": "*",
     "multer": "*",

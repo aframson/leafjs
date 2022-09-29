@@ -17,6 +17,5 @@ module.exports = (app) => {
             cookieParser: true,
             useUploadArray: true,
             useStaticFiles: true,
-            StaticName: 'public'
     })
 }
