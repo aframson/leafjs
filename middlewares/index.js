@@ -34,10 +34,19 @@ const basicAuth = async (req, res, next) => {
 
 
 
+function realTimeAuth(socket, data, callback) {
+
+  const {username,password} = data
+  const user = users.find(u => u.username === username && u.password === password);
+  if (user) {
+    callback();
+    socket.emit('authenticated',true)
+  }else{
+    socket.emit('authenticated',false)
+  }
+}
 
 
 
 
-
-
-module.exports = {basicAuth};
+module.exports = {basicAuth,realTimeAuth};
