@@ -80,7 +80,7 @@ module.exports = function (io) {
          /**
           * Routes begins here 
           */
-         require('./services/users')(socket) // this is a route to the users API in the ./service folder
+         require('./services/users')(socket,io) // this is a route to the users API in the ./service folder
     })
 }
 ```
@@ -122,11 +122,11 @@ const userData = [
     
 ]
 
-module.exports = userModel = (socket)=>{
+module.exports = userModel = (socket,io)=>{
     
       socket.on('user-data',(d)=>{
           userData.push(d) // update the data
-          socket.emit('get-user',userData) // send response to the listening channel 'get-user' 
+          io.emit('get-user',userData) // send response to the listening channel 'get-user' 
       })
 
 }
@@ -260,13 +260,7 @@ Do you want to know more? Head to the <a
 href="#"><code><b>Getting Started</b></code></a>.
 
 
-### Leafjs v1.x and v2.x
-
-Code for Fastify's **v1.x** is in [**`branch
-1.x`**](https://github.com/fastify/fastify/tree/1.x), so all Fastify 1.x related
-changes should be based on **`branch 1.x`**. In a similar way, all Fastify
-**v2.x** related changes should be based on [**`branch
-2.x`**](https://github.com/fastify/fastify/tree/2.x).
+### Leafjs v1.x 
 
 > ## Note
 > This framework is intended for people who knows the below stacks 
