@@ -8,9 +8,6 @@ resources of your server, knowing that you are serving the highest number of
 requests as possible, without sacrificing security validations and handy
 development?
 
- - [Quick start](#quick-start)
- - [Install](#install)
-
 
 Enter Leaf. Leaf is a Server-side  framework highly focused on providing the best
 developer experience with the least overhead and a powerful plugin architecture.
