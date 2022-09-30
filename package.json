@@ -1,6 +1,6 @@
 {
   "name": "create-leaf",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The Abstracted Real-Time API server framework for Backend Applications",
   "main": "app.js",
   "bin": {
