@@ -1,7 +1,7 @@
 /**
  * =======================================================================
  *  This software is a product of cycletech.ltd intended to serve as a 
- *  container for building the soma server side application
+ *  container for building the soma server side application in real time
  * =======================================================================
  *  This is the settings page with cahes all the other configurations 
  *  before the application starts
