@@ -30,11 +30,11 @@ const userData = [
     
 ]
 
-module.exports = userModel = (socket)=>{
+module.exports = userModel = (socket,io)=>{
     
     socket.on('user-data',(d)=>{
         userData.push(d) // update the data
-        socket.emit('get-user',userData) // send response to the listening channel 'get-user' 
+        io.emit('get-user',userData) // send response to the listening channel 'get-user' 
     })
 
 
