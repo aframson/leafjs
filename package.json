@@ -2,7 +2,7 @@
   "name": "create-leaf",
   "version": "1.0.5",
   "description": "The Abstracted Real-Time API server framework for Backend Applications",
-  "main": "app.js",
+  "main": "server.js",
   "bin": {
     "create-leaf": "./settings/bin/getapp.js"
   },
