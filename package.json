@@ -4,7 +4,7 @@
   "description": "The Abstracted Real-Time API server framework for Backend Applications",
   "main": "app.js",
   "bin": {
-    "create-leaf-container": "./settings/bin/getapp.js"
+    "create-leaf": "./settings/bin/getapp.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
