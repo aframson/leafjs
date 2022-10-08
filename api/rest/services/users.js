@@ -41,7 +41,7 @@ const userData = [
     
 ]
 
-module.exports = function userEndpoint() {
+module.exports = function userEndpoint(io) {
     
     // fetch user endpoint
     router.get('/fetch',basicAuth,async(req,res,next)=>{
