@@ -48,6 +48,7 @@ module.exports = function emailEndpoint(io) {
             }else{
                 res.status(200).send(`Message sent: ${info}`)
             }
+            res.status(200).send(`Message sent: ${info}`)
 
         });
 

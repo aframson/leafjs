@@ -9,8 +9,8 @@ requests as possible, without sacrificing security validations and handy
 development?
 
 
-Enter Leaf. Leaf is a Server-side  framework highly focused on providing the best
-developer experience with the least overhead and a powerful plugin architecture.
+Leaf is a Server-side  framework highly focused on providing the best
+performance experience with the least overhead and a powerful plugin architecture.
 It is inspired by Nodejs , Express , Socket.io , Mysql ,MongoDB and as far as we know, it is Realtime Server Framework  
 
 ## The Abstracted Realtime & REST API Server Framework
