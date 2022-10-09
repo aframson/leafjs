@@ -44,9 +44,11 @@ module.exports = function emailEndpoint(io) {
 
         const info = transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
-              res.status(400).send(`Message Error: ${error}`)
+               res.status(400).send(`Message Error: ${error}`)
+            }else{
+                res.status(200).send(`Message sent: ${info}`)
             }
-            res.status(200).send(`Message sent: ${info.messageId}`)
+
         });
 
        

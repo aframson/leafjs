@@ -11,7 +11,8 @@
  *  Developer : Richard Obiri
  * =======================================================================
  */
-const Leaf = require('leaf-server')
+// const Leaf = require('leaf-server')
+const Leaf = require('./settings')
 
 
 Leaf.init(5050,
@@ -20,7 +21,7 @@ Leaf.init(5050,
     methods: ["GET", "POST"], // you ccan add more methods to it 
     errorHandler: require('./settings/configs/errorHandling'), // you can write your own error handler and locate it 
 },
-(io, leaf) => {
+(io, leaf) => {  
     // 1. Realtime Routes 
     require('./api/realtime/route')(io)
     // 2 .Adding the config file 
