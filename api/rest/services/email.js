@@ -23,7 +23,7 @@ const transporter = nodemailer.createTransport({
     port: 465,
     auth: {
         user:'naturalspacetechgh@gmail.com',
-        pass:'N@turaltech77'
+        pass:'xjejbfsavytywtbp'
     }
 });
 
@@ -46,9 +46,8 @@ module.exports = function emailEndpoint(io) {
             if (error) {
                res.status(400).send(`Message Error: ${error}`)
             }else{
-                res.status(200).send(`Message sent: ${info}`)
+                res.status(200).send(`Message sent: ${info.response}`)
             }
-            res.status(200).send(`Message sent: ${info}`)
 
         });
 
