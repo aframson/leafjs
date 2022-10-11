@@ -6,6 +6,7 @@
 
 const Leaf = require('leaf-server')
 
+
 module.exports = (app) => {
     Leaf.config(app,
         {
@@ -16,6 +17,6 @@ module.exports = (app) => {
             urlEncodeExtented: true,
             cookieParser: true,
             useUploadArray: true,
-            useStaticFiles: true,
+            useStaticFiles: true
     })
 }

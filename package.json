@@ -17,12 +17,13 @@
     "cookie-parser": "*",
     "cors": "*",
     "express": "*",
-    "leaf-server": "*",
+    "leaf-server": "^1.1.1",
     "mongoose": "*",
     "morgan": "*",
     "multer": "*",
     "mysql": "*",
     "nodemailer": "*",
+    "redis": "*",
     "socket.io": "*"
   },
   "devDependencies": {

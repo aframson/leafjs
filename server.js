@@ -11,7 +11,9 @@
  *  Developer : Richard Obiri
  * =======================================================================
  */
-const Leaf = require('leaf-server')
+// const Leaf = require('leaf-server')
+const Leaf = require('./settings')
+
 
 
 Leaf.init(5050,

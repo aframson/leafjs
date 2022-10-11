@@ -23,7 +23,7 @@ const transporter = nodemailer.createTransport({
     port: 465,
     auth: {
         user:'naturalspacetechgh@gmail.com',
-        pass:'xjejbfsavytywtbp'
+        pass:''
     }
 });
 
@@ -34,12 +34,22 @@ module.exports = function emailEndpoint(io) {
 
         const { message, from, to, subject} = req.body
 
+       
         const mailOptions = {
-            from: from, 
-            to: to, // the user email
-            subject: subject,
-            html: `<h4>Reset Password</h4> ${message}`
-        };
+            from: from,
+            to: to,
+            cc:'',
+                bcc:'',
+                subject: subject,
+                /* Adding HTML and Text Version, so the email will not land up in the Spam folder */
+                html: 'Hello Team! <br><br>Please find attached...<br><br>Thanks,<br>XXXXX',
+                text: message,
+                // attachments: [{
+                //     // file on disk as an attachment, concatenating the file extension separately since NODE is not renaming the file properly with fs.renameSync
+                //     filename: finalFileNameWithoutExt + '.xlsx',
+                //     path: reportsLocationPathWithYearMonth + finalFileNameWithoutExt + '.xlsx' // stream this file
+                // }]
+            };
 
 
         const info = transporter.sendMail(mailOptions, (error, info) => {

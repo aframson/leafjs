@@ -44,12 +44,12 @@ const userData = [
 module.exports = function userEndpoint(io) {
     
     // fetch user endpoint
-    router.get('/fetch',basicAuth,async(req,res,next)=>{
+    router.get('/fetch',async(req,res,next)=>{
        res.status(200).send(userData)
     })
 
     // add user data and get realtime response on listerning to 'fetch-user'
-    router.post('/add',basicAuth,async (req,res,next)=>{
+    router.post('/add',async (req,res,next)=>{
           let data = {
             id:34,
             name:req.body.name,
